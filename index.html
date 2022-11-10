@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project: Weather App</title>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/f141875ee7.js"
+      crossorigin="anonymous"
+    ></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;400;700&display=swap"
       rel="stylesheet"
@@ -35,7 +39,8 @@
             <ul>
               <li class="heading" id="city">SD</li>
               <li class="subheading">
-                Last updated: <span id="date">Day/Time</span>
+                Last updated: <br />
+                <span id="date">Day/Time</span>
               </li>
             </ul>
           </div>
@@ -46,6 +51,9 @@
                 ><span class="unit">C|<a href="#">F</a></span>
               </li>
               <li class="description" id="description">Clear sky</li>
+              <li class="weather-icon" id="weather-icon">
+                <i class="fa-solid fa-cloud"></i>
+              </li>
             </ul>
           </div>
         </div>

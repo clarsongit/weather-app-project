@@ -69,3 +69,8 @@ li:first-letter {
 .right-side {
   text-align: right;
 }
+
+.weather-icon {
+  text-align: right;
+  font-size: 25px;
+}
