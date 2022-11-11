@@ -28,10 +28,20 @@
   </head>
   <body>
     <div class="container">
-      <form class="search-bar" id="city-form">
-        <i class="fa-solid fa-magnifying-glass search-icon"></i>
-        <input type="text" id="city-input" placeholder="Search city" />
-        <input type="submit" value="Enter" />
+      <form class="search-form" id="search-form">
+        <div class="row">
+          <div class="col">
+            <input
+              type="search"
+              id="city-input"
+              placeholder="Enter a city"
+              autocomplete="off"
+            />
+          </div>
+          <div class="col">
+            <input type="submit" value="Search" />
+          </div>
+        </div>
       </form>
       <div class="main-section">
         <div class="row">
