@@ -51,10 +51,6 @@ li:first-letter {
   text-align: right;
 }
 
-.search-button,
-.search-bar {
-}
-
 .main-section {
   margin: 100px auto;
   border: 1px solid black;
@@ -83,4 +79,7 @@ li:first-letter {
 
 .units .active:hover {
   text-decoration: none;
+}
+.inline {
+  display: inline;
 }
