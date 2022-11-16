@@ -41,6 +41,12 @@
           <div class="col-6">
             <ul>
               <li class="heading" id="city">San Diego</li>
+              <img
+                src="	http://openweathermap.org/img/wn/02n@2x.png"
+                alt=""
+                id="weather-icon"
+                class="weather-icon"
+              />
               <li class="subheading">
                 Last updated: <br />
                 <span id="date">Saturday 12:00</span>
@@ -48,24 +54,22 @@
             </ul>
           </div>
           <div class="col-6 right-side">
-            <ul>
+            <ul class="right">
               <li>
-                <span class="temp" id="temp">27</span
+                <span class="temp" id="temp">15</span
                 ><span class="units">
-                  <a href="#" class="unitC active" id="celcius-link">°C|</a>
-                  <a href="#" class="unitF" id="fahrenheit-link">°F</a>
+                  <a href="#" class="unitC active" id="celcius-link">°C</a>|<a
+                    href="#"
+                    class="unitF"
+                    id="fahrenheit-link"
+                    >°F</a
+                  >
                 </span>
               </li>
-              <li class="description" id="description">Few clouds</li>
-              <li>
-                <img
-                  src="	http://openweathermap.org/img/wn/02n@2x.png"
-                  alt=""
-                  id="weather-icon"
-                  class="weather-icon"
-                />
-              </li>
-              <li class="wind" id="wind">Wind: 1km/hr</li>
+              <div class="right-subheading">
+                <li class="description" id="description">Few clouds</li>
+                <li class="wind description" id="wind">Wind: 1km/hr</li>
+              </div>
             </ul>
           </div>
         </div>
@@ -77,6 +81,7 @@
         >
           Open-source code</a
         >
+        by Chloe Larson
       </footer>
     </div>
     <script src="src/script.js"></script>

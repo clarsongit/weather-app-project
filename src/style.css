@@ -24,6 +24,7 @@ li:first-letter {
   font-size: 35px;
   font-weight: bold;
   text-align: left;
+  display: inline;
 }
 
 .subheading {
@@ -32,49 +33,55 @@ li:first-letter {
 }
 
 .temp {
-  font-size: 30px;
+  position: relative;
+  font-size: 45px;
   font-weight: bold;
+  top: 10px;
 }
 
 .units {
   position: relative;
-  font-size: 16px;
-  top: -11px;
+  font-size: 24px;
+  top: -5px;
   font-weight: 600;
   text-align: center;
 }
 
 .search-form {
   position: fixed;
-  top: 25px;
-  right: 50px;
+  top: 50px;
+  right: 75px;
   text-align: right;
 }
 
 .main-section {
-  margin: 100px auto;
+  margin: 125px auto;
   border: 1px solid black;
   border-radius: 4px;
-  padding: 18px 20px;
+  padding: 18px 20px 30px;
   max-width: 700px;
 }
 
 .description {
-  font-size: 18px;
-  padding-top: 5px;
+  font-size: 20px;
 }
 
 .right-side {
   text-align: right;
 }
 
+.right-subheading {
+  padding-top: 30px;
+}
+
 .weather-icon {
-  width: 50px;
+  width: 100px;
 }
 
 .units .active {
   color: black;
   cursor: default;
+  padding: 0;
 }
 
 .units .active:hover {
@@ -82,4 +89,8 @@ li:first-letter {
 }
 .inline {
   display: inline;
+}
+
+.unitC {
+  margin-right: 4px;
 }
