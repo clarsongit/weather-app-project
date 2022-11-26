@@ -99,4 +99,9 @@ li:first-letter {
 
 .weather-forecast {
   text-align: center;
+  color: black;
+}
+
+.weather-forecast-temperature-min {
+  opacity: 0.6;
 }
