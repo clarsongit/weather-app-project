@@ -1,5 +1,6 @@
 body {
   font-family: "Roboto Mono", monospace;
+  background: #e1f6fc;
 }
 
 ul {
@@ -60,6 +61,7 @@ li:first-letter {
   border-radius: 4px;
   padding: 18px 20px 30px;
   max-width: 700px;
+  background: white;
 }
 
 .description {
