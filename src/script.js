@@ -30,6 +30,7 @@ function formatDay(timestamp) {
   let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
   return days[day];
+}
 
 function displayForecast(response) {
   let forecast = response.data.daily;
@@ -69,10 +70,8 @@ function displayForecast(response) {
 }
 
 function getForecast(coordinates) {
-  console.log(coordinates);
   let apiKey = "1a2b7258ebd456c01aef9175dfe8b709";
   let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
-  console.log(apiUrl);
   axios.get(apiUrl).then(displayForecast);
 }
 
@@ -100,7 +99,7 @@ function displayTemp(response) {
   iconElement.setAttribute("alt", response.data.weather[0].description);
   // windElement.innerHTML = response.data.main.visibility;
   windSpeed = response.data.wind.speed;
-  windElement.innerHTML = `Wind speed: ${windSpeed}km/hr`;
+  windElement.innerHTML = `Wind speed: ${windSpeed}m/hr`;
 
   getForecast(response.data.coord);
 }
@@ -108,7 +107,6 @@ function displayTemp(response) {
 function search(city) {
   let apiKey = "4f1c03a70540f345ecd651bb7c938490";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&&appid=${apiKey}&units=metric`;
-  console.log(apiUrl);
   axios.get(apiUrl).then(displayTemp);
 }
 
@@ -149,4 +147,3 @@ let celciusLink = document.querySelector("#celcius-link");
 celciusLink.addEventListener("click", displayCelcius);
 
 search("Paris");
-// displayForecast();
